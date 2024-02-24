@@ -1,5 +1,4 @@
 #planning
-
 import math
 
 def pick():
@@ -23,7 +22,6 @@ def pick():
     
 def linear():
     print("Hello world")
-    
     
 def quadratic():
     print("\nCondition: a != 0")
@@ -55,11 +53,7 @@ def quadratic():
         return pick()
     
 def cubic():
-    print("Hello world")  
-    
-    
-     
+    print("Hello world")         
 def quartic():
     print("Hello world")
-    
 pick()
