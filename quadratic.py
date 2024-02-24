@@ -1,28 +1,18 @@
-#planning
 import math
 
 def pick():
-    print("\nA - Linear equation")
-    print("B - Quadratic equation")
-    print("C - Cubic equation")
-    print("D - Quartic equation")
-    choices = input("Please choose an equation to continue: ")
+    print("\n1. Solve quadratic equation")
+    print("2. End solving equation")
+    choice = int(input("Choose 1 or 2: "))
     
-    if choices == "A":
-        linear()
-    elif choices == "B":
+    if choice == 1:
         quadratic()
-    elif choices == "C":
-        cubic()
-    elif choices == "D":
-        quartic()
+    elif choice == 2:
+        print()
     else:
-        print("Choose again blud")
+        print("What blud doing?")
         return pick()
-    
-def linear():
-    print("Hello world")
-    
+
 def quadratic():
     print("\nCondition: a != 0")
     a = float(input("Input a: "))
@@ -51,9 +41,4 @@ def quadratic():
     else:
         print("Bruh how?")
         return pick()
-    
-def cubic():
-    print("Hello world")         
-def quartic():
-    print("Hello world")
 pick()
